@@ -7,10 +7,10 @@
         line-height: 0;
         text-align: center;
         :last-child {
-            padding-right: 0;
+            margin-right: 0;
         }
        &_item {
-           padding-right: 30px;
+            margin-right: 30px;
            color: rgba(51, 51, 51, 1);
             display: inline;
             list-style: none;
@@ -47,16 +47,83 @@
             text-decoration: none;
         }
         &_btn {
-            padding: 12px 26px 13px 27px;
-            background: #FFFFFF;
-            border: 2px solid #66C05D;
-            box-sizing: border-box;
-            border-radius: 40px;
-            font-size: 14px;
-            line-height: 16px;
+           @include btn;
         }
     }
 }
 hr {
     margin: 0;
+}
+
+.menu {
+    &_list {
+        margin: 30px 0;
+        line-height: 0;
+        text-align: center;
+        :last-child {
+            margin-right: 0;
+        }
+        &_item {
+            margin-right: 40px;
+            display: inline;
+        }
+    }
+}
+
+.promo {
+    position: relative;
+    z-index: 1;
+   
+    .green {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        height: 604px;
+        background-color: rgba(102, 192, 93, 1);
+        
+    }
+        .wrapper {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+             position: relative;
+             z-index: 2;  
+        }
+        &_bg-img {
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+       }
+       &_header {
+        position: relative;
+        z-index: 2;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        color: #FFFFFF;
+
+    }
+    &_text {
+        max-width: 308px;
+        margin-top: 50px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    &_btn {
+        margin-top: 50px;
+        @include btn;
+        background: #66C05D;
+        border: 2px solid #FFFFFF;
+        width: 170px;
+        color: #fff;
+    }
+    
+   
+  
+   
+  
+   
+
 }
