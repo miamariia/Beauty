@@ -6,6 +6,7 @@
     src: local(''),
          url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
          url('../fonts/roboto-v20-latin-regular.woff') format('woff')
+         
   }
   
   @font-face {
@@ -16,3 +17,23 @@
          url('../fonts/roboto-v20-latin-700.woff2') format('woff2'), 
          url('../fonts/roboto-v20-latin-700.woff') format('woff')
   }
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-v20-cyrillic-regular.woff2') format('woff2'), 
+       url('../fonts/roboto-v20-cyrillic-regular.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/roboto-v20-cyrillic-700.eot?#iefix') format('embedded-opentype')
+       url('../fonts/roboto-v20-cyrillic-700.woff2') format('woff2')
+       url('../fonts/roboto-v20-cyrillic-700.woff') format('woff')
+}
