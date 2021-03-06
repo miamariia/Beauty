@@ -1,3 +1,6 @@
+.container {
+    width: 1110px;
+}
 .navigation {
     padding: 17px 0;
     max-height: 50px;
@@ -119,11 +122,72 @@ hr {
         width: 170px;
         color: #fff;
     }
-    
-   
-  
-   
-  
-   
+}
 
+.suggestion {
+    padding-top: 80px;
+    max-height: 954px;
+    background: #EFEFEF;
+    &_header {
+        margin-bottom: 0;
+        margin-left: 25px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+
+    }
+
+    &_adv {
+        margin-top: 38px;
+       
+        &_item {
+            margin-right: 30px;
+            padding: 25px 0;
+            background-color: #fff;
+            max-width: 255px;
+            &_img {
+                display: block;
+                margin: 0 auto;
+            }
+            &_descr {
+                margin-top: 20px;
+                padding: 0 30px;
+                text-align: center;
+                font-size: 14px;
+                line-height: 20px;
+                color: #333333;
+            }
+            &_price {
+                margin-top: 20px;
+                font-weight: 500;
+                font-size: 21px;
+                line-height: 25px;
+                text-align: center;
+                letter-spacing: 0.05em;
+            }
+            &_btn {
+                display: block;
+                margin: 0 auto;
+                margin-top: 20px;
+                @include btn;
+                background: #66C05D;
+                color: #EFEFEF;
+                padding: 9px 40px;
+            }
+        }
+    }
+    .pos {
+        margin-right: 0;
+    }
+    &_item {
+        margin-top: 100px;
+    
+        &_wrap {
+          margin-right: 30px;
+            width: 540px;
+            display: flex;
+            background: #66C05D;
+        }
+    }
 }
